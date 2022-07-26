@@ -1,0 +1,464 @@
+<head>
+    <script type="text/javascript">
+        window.onload = function() {
+            var ex1 = document.getElementById('yes');
+            ex1.onclick = handler;
+            var ex2 = document.getElementById('No');
+            ex2.onclick = handler1;
+        }
+    
+        function handler() {   
+            $('#textboxes').show();
+        }
+        function handler1() {   
+            $('#textboxes').hide();
+        }
+      </script>
+</head>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<form>
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+      <h2>Contact Information</h2>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+      <label for="exampleFormControlInput">What is your business name?</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What is your business address?</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What is your billing address?</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What is your shipping address? </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What are your contact details?  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What is your email address?   </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you own a Domain? </label>
+    </div>
+
+
+    <div class="form-check ">
+        <input type="radio" name="yes" id="yes" value="yes" />
+        <label for="Yes">Yes</label>
+    </div>
+    
+
+    <div class="form-check ">
+        <input type="radio" name="yes" id="No" value="No" />
+        <label for="No">No</label>
+    </div>
+    
+    <div id="textboxes" style="display: none">
+        <label for="textbox">What is your email address?   </label>
+        <input type="email" class="form-control" id="textbox" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+   
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Provide us with an email ID for transferring store ownership.  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Please describe your business and what you plan on selling. </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <h2>General Information</h2>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you have a Shopify Account?  </label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes1" id="yes" value="yes" />
+        <label for="Yes">Yes</label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes1" id="No" value="No" />
+        <label for="No">No</label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+ 
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+
+        <div class="form-group"></div>
+            <label for="exampleFormControlInput">Do you have a Business Logo?  </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        
+        <div class="form-group"></div>
+            <label for="exampleFormControlInput">Do you have a list of products or services?  </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Who is your target audience? </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you know about your competitors?  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What is your budget for the Store?  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you have a specific time-line for the project? </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you need any data to be migrated?</label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes2" id="yes" value="yes" />
+        <label for="Yes">Yes</label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes2" id="No" value="No" />
+        <label for="No">No</label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you need to redesign your website or want us to build a new one? </label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes3" id="yes" value="yes" />
+        <label for="Yes">Yes</label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes3" id="No" value="No" />
+        <label for="No">No</label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What type of payment options do you want to enable in your store? </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What will be the color scheme of the site?  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        
+        <div class="form-group"></div>
+            <label for="exampleFormControlInput">Do you have any existing material for the website?  </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        
+        <div class="form-group"></div>
+            <label for="exampleFormControlInput">Do you have any written content and images for the website?  </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Do you want any social network account setup? </label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes5" id="yes" value="yes" />
+        <label for="Yes">Yes</label>
+    </div>
+
+    <div class="form-check ">
+        <input type="radio" name="yes5" id="No" value="No" />
+        <label for="No">No</label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">Please list down any 3 or more websites you like.  </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <h2> Language Information </h2>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What language do you want your store to display?   </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <h2> Currency Information </h2>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="exampleFormControlInput">What currency do you want to keep as default?   </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="form-group"></div>
+    <div class="col d-flex justify-content-center">
+    <div class="card w-50">
+    <div class="card-body">
+    <div class="form-group">
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="form-group"></div>
+      </form>
